@@ -38,6 +38,21 @@ p {
     gap: 50px;
 }
 
+.btn {
+    background-color: #000000;
+    color: #dbdbdb;
+    border: 0;
+    border-radius: 20px;
+    font-family: 'Gothic A1', sans-serif;
+    width: 80px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 .dropdown {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -116,6 +131,16 @@ p {
 
 .hidden {
     display: none;
+}
+
+
+.eraser-active {
+    background-color: #dbdbdb;
+    color: #000000;
+    border: 0;
+    border-radius: 20px;
+    font-family: 'Gothic A1', sans-serif;
+    width: 80px;
 }
 
 
