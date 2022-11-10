@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;600&family=Quicksand:wght@300;400;500;700&display=swap');
+    </style>
+</head>
+<body ondragstart="return false">
+    <div class="header"></div>
+
+    <div class="title">
+        <h1>Draw anything you want!</h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="dropdown">
+            <button id="sizeDropdown" class="dropbtn">Canvas Size</button>
+            <div id="canvasSizeMenu" class="dropdown-items">
+                <button id="sixteen" class="item">16</button>
+                <button id="twentyFour" class="item">24</button>
+                <button id="thirtyTwo" class="item">32</button>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button id="colorDropdown" class="dropbtn">Ink</button>
+            <div id="colorModeMenu" class="dropdown-items">
+                <button id="black" class="item">Black</button>
+                <button id="color" class="item">Color</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="canvas" class="small">
+    </div>
+
+
+
+    <div class="footer"></div>
+
+    <script src="app.js" charset="utf-8"></script>
+    
+</body>
+</html>
