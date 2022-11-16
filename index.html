@@ -11,42 +11,55 @@
     </style>
 </head>
 <body ondragstart="return false">
-    <div class="header"></div>
 
-    <div class="title">
-        <h1>Draw anything you want!</h1>
-    </div>
 
-    <div class="wrapper">
-        <div class="dropdown">
-            <button id="sizeDropdown" class="dropbtn">Canvas Size</button>
-            <div id="canvasSizeMenu" class="dropdown-items">
-                <button id="sixteen" class="item">16</button>
-                <button id="twentyFour" class="item">24</button>
-                <button id="thirtyTwo" class="item">32</button>
-            </div>
+    <div class="main">
+
+        <div class="title">
+            <h1>Draw anything you want!</h1>
         </div>
-        <div class="dropdown">
-            <button id="colorDropdown" class="dropbtn">Ink</button>
-            <div id="colorModeMenu" class="dropdown-items">
-                <button id="black" class="item">Black</button>
-                <button id="color" class="item">Color</button>
+
+        <div class="wrapper">
+            <div class="menu-wrapper">
+            <div class="dropdown">
+                <button id="sizeDropdown" class="dropbtn">Canvas Size</button>
+                <div id="canvasSizeMenu" class="dropdown-items">
+                    <button id="sixteen" class="item">16</button>
+                    <button id="twentyFour" class="item">24</button>
+                    <button id="thirtyTwo" class="item">32</button>
+                </div>
             </div>
+            <div class="menu-input">
+                <p>or</p><input type="text" id="menuInput" class="menu-input" placeholder="Any number from 4 to 100">
+            </div>
+            </div>
+            <div class="menu-wrapper">
+                <div class="dropdown">
+                    <button id="colorDropdown" class="dropbtn">Ink</button>
+                    <div id="colorModeMenu" class="dropdown-items">
+                        <button id="black" class="item">Black</button>
+                        <button id="color" class="item">Color</button>
+                        <button id="gradient" class="item">Gradient</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+
+        <div class="container">
+            <div id="canvas" class="grid">
+            </div>
+
+            <div id="erasers" class="button">
+                <button id="reset" class="btn">Reset</button>
+                <button id="erase" class="btn">Erase</button>
+            </div>
+
+        </div>
+
     </div>
 
-
-    <div id="canvas" class="small">
-    </div>
-
-    <div id="erasers" class="button">
-        <button id="reset" class="btn">Reset</button>
-        <button id="erase" class="btn">Erase</button>
-    </div>
-
-    
-
-    <div class="footer"></div>
 
     <script src="app.js" charset="utf-8"></script>
     

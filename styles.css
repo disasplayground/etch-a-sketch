@@ -18,24 +18,55 @@ p {
 
 #canvas {
     background-color: transparent;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-
-.header  {
-    height: 50px;
+.main {
+    margin: auto;
 }
+
+.container {
+    margin: auto;
+    width: 720px;
+    height: 800px;
+}
+
 
 .title {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .wrapper {
+    width: 720px;
     display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 0;
+
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 50px;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-input {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    gap: 10px;
+}
+
+.menu-input:focus {
+    outline: none;
 }
 
 .btn {
@@ -48,31 +79,39 @@ p {
 }
 
 .button {
-    display: flex;
-    justify-content: center;
+    justify-content: end;
     gap: 10px;
 }
+
 
 .dropdown {
     padding-top: 10px;
     padding-bottom: 10px;
+
 }
 
 .dropbtn {
+    position: relative;
     font-family:'Quicksand', sans-serif;
     width: 120px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding-top: 7px;
     padding-bottom: 7px;
     border: none;
+    z-index: 2;
 }
 
 
 .dropdown-items {
     display: none;
+    position: absolute;
+    background-color: #242424;
+    opacity: 0.8;
     text-align: center;
+    padding-top: 18px;
+    padding-bottom: 8px;
     width: 120px;
-    z-index: 1;
+    border-radius: 10px;
 }
 
 
@@ -82,44 +121,37 @@ p {
     padding-bottom: 4px;
     border: 0px;
     background-color: transparent;
+    color: #dbdbdb;
 }
 
 .item:hover {
-    background-color: pink;
+    background-color: rgb(243, 237, 190);
+    color: #242424;
 }
 
 .show {
     display: grid;
-    padding-top: 5px;
     grid-gap: 0;
     justify-content: center;
+    margin-top: -15px;
+    z-index: 1;
 }
 
-.small {
+.grid {
     display: grid;
-    grid-template-rows: repeat(16, 20px);
-    grid-template-columns: repeat(16, 20px);
+    width: 720px;
+    height: 720px;
     justify-content: center;
-}
-
-.medium {
-    display: grid;
-    grid-template-rows: repeat(24, 18px);
-    grid-template-columns: repeat(24, 18px);
-    justify-content: center;
-}
-
-.large {
-    display: grid;
-    grid-template-rows: repeat(32, 15px);
-    grid-template-columns: repeat(32, 15px);
-    justify-content: center;
+    justify-items: stretch;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
 }
 
 
 .pixel {
     border: solid 1px #dbdbdb;
-    padding: 0px;
+    gap: 0px;
+    align-self: stretch;
 }
 
 
